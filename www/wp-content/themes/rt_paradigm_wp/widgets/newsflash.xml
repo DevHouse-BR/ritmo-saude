@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- $Id: newsflash.xml 16565 2010-04-28 12:21:27Z ian $ -->
+<form>
+	<fieldset name="widget">
+		<field name="title" type="text" label="Title" description="Widget Title" class="widefat" size="30" default="" />
+		<field name="cat" type="categories" label="Category" description="Choose a category" default="uncategorized" />
+		<field name="item_title" type="list" class="widefat" label="Show Post Title" description="Show/hide Post title" default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="link_titles" type="list" class="widefat" label="Linked Titles" description="Link the Post titles to Posts" default="1">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="item_heading" type="list" class="widefat" label="Header Level" description="Select the desired HTML level for the Post title" default="h1">
+			<option value="h1">H1</option>
+			<option value="h2">H2</option>
+			<option value="h3">H3</option>
+			<option value="h4">H4</option>
+			<option value="h5">H5</option>
+		</field>
+		<field name="post_content" type="list" class="widefat" label="Post Content" description="Select if you want to show the Posts content or its excerpt" default="content">
+			<option value="content">Content</option>
+			<option value="excerpt">Excerpt</option>
+		</field>
+		<field name="readmore" type="list" class="widefat" label="'Read More ...' Link" description="If set to Show, the 'Read more...' link will show if Main text has been provided for an Post." default="1">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="readmore_label" type="text" label="'Read More' Label" description="Label for the Read More link" class="widefat" size="30" default="Read More ..." />
+		<field name="count" type="text" label="Number of Posts" description="Number of Posts to display within this Widget" class="widefat" size="30" default="1" />
+		<field name="order" type="list" class="widefat" label="Order Results" description="Select the order in which you want query results presented" default="date">
+			<option value="author">Author</option>
+			<option value="comment_count">Comment Count</option>
+			<option value="date">Date</option>
+			<option value="title">Title</option>
+			<option value="modified">Modified</option>
+			<option value="name">Name</option>
+			<option value="none">None</option>
+			<option value="id">ID</option>
+			<option value="parent">Parent</option>
+			<option value="rand">Random</option>
+		</field>
+	</fieldset>
+</form>
